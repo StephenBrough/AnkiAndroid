@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/primaryGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/decksFragment"
+            android:icon="@android:drawable/btn_dropdown"
+            android:title="Decks" />
+
+        <item
+            android:id="@+id/cardBrowserFragment"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Card Browser" />
+
+        <item
+            android:id="@+id/statisticsFragment"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Statistics" />
+    </group>
+
+    <group android:id="@+id/secondaryGroup">
+
+        <item
+            android:id="@+id/nightMode"
+            android:icon="@android:drawable/ic_menu_day"
+            android:title="Night Mode" />
+
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/helpFragment"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Help" />
+
+        <item
+            android:id="@+id/sendFeedbackFragment"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Send Feedback" />
+    </group>
+</menu>

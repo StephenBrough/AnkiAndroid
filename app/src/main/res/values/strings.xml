@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AnkiAndroid</string>
+    <string name="import_collection">Import</string>
+    <string name="create_filtered_deck">Create Filtered Deck</string>
+    <string name="empty_cards">Empty Cards</string>
+    <string name="manage_note_types">Manage Note Types</string>
+    <string name="deck_browser">Deck Browser</string>
+    <string name="card_browser_fragment">Card Browser Fragment</string>
+    <string name="no_decks_imported_yet">No decks imported yet</string>
+</resources>

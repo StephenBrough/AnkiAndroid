@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 'android-P'
+    defaultConfig {
+        applicationId "com.sbrough.ankiandroid"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Kotlin
+    implementation Dependencies.kotlinStdLib
+
+    // Support
+    implementation Dependencies.appCompat
+    implementation Dependencies.constraintLayout
+
+    // Architecture components
+    implementation Dependencies.lifecycleExtensions
+    implementation Dependencies.navigationFragment
+    implementation Dependencies.navigationUi
+    implementation Dependencies.roomRuntime
+    kapt Dependencies.roomCompiler
+
+    // Logging/Analytics
+    implementation Dependencies.timberLogging
+
+    implementation Dependencies.moshi
+    kapt Dependencies.moshiCodegen
+
+    // Test dependencies
+    androidTestImplementation Dependencies.espressoCore
+    androidTestImplementation Dependencies.runner
+    androidTestImplementation Dependencies.rules
+    testImplementation 'junit:junit:4.12'
+
+}

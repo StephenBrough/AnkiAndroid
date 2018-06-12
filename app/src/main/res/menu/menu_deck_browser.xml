@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/importCollection"
+        android:title="@string/import_collection"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/createFilteredDeck"
+        android:title="@string/create_filtered_deck"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/emptyCards"
+        android:title="@string/empty_cards"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/manageNoteTypes"
+        android:title="@string/manage_note_types"
+        app:showAsAction="never"/>
+</menu>
